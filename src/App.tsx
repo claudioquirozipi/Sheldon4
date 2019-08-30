@@ -6,6 +6,9 @@ import { createGlobalStyle } from 'styled-components'
 import MyRoutes from './routes';
 
 const GlobalStyle = createGlobalStyle`
+  * {
+    font-family: 'Montserrat', sans-serif;
+  }
   body {
     padding: 0;
     margin: 0;

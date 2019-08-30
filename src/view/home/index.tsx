@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 //Components
-import DashBoardNav from '../dashBoardNav';
+
 import TableHome from './tableHome';
 
 //Styled-Components
@@ -11,12 +11,12 @@ import {
 
 function Home() {
     return(
-        <DashBoardNav>
-            <CardHomeSC>
+        
+        <CardHomeSC>
 
-                <TableHome />
-            </CardHomeSC>
-        </DashBoardNav>
+            <TableHome />
+        </CardHomeSC>
+        
     )
 }
 

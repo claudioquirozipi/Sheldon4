@@ -1,11 +1,16 @@
 import React from 'react';
 
 //Components
+import GridContainerC from '../grid/gridContainerC';
+
+
 
 
 function WhatsappIntegrations() {
     return(
-        <h1>WhatsappIntegrations</h1>
+        <GridContainerC>
+            <h1>WhatsappIntegrations</h1>
+        </GridContainerC>
     )
 }
 

@@ -1,13 +1,14 @@
-import React from 'react';
+import * as React from 'react';
 
 //Components
 import GridContainerC from '../grid/gridContainerC';
 
-function LinkedinIntegrations() {
+function HomeView3() {
     return(
         <GridContainerC>
-            <h1>Linkedin</h1>
+            <h1>HomeView 3</h1>
         </GridContainerC>
     )
 }
-export default LinkedinIntegrations;
+
+export default HomeView3;

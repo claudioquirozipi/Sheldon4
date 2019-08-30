@@ -1,11 +1,14 @@
 import React from 'react';
 
 //Components
+import GridContainerC from '../grid/gridContainerC';
 
 
 function CalendarIntegrations() {
     return(
-        <h1>CalendarIntegrations</h1>
+        <GridContainerC>
+            <h1>CalendarIntegrations</h1>
+        </GridContainerC>
     )
 }
 

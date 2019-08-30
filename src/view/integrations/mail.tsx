@@ -1,5 +1,7 @@
 import React from 'react';
 
+//Components
+import GridContainerC from '../grid/gridContainerC';
 
 //Styled-Components
 import {
@@ -12,7 +14,7 @@ import ButtonsIcons from '../../components/buttons/buttonsIcons';
 
 function MailIntegrations() {
     return(
-        <>
+        <GridContainerC>
             <h1>mail</h1>
             <ContainerButtons>
                 <ButtonsIcons>Authentication</ButtonsIcons>
@@ -37,7 +39,7 @@ function MailIntegrations() {
                 <button>Validate</button>
                 <button>Copy</button>
             </ContainerButtons>
-        </>
+        </GridContainerC>
     )
 }
 

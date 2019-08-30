@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 //Components
-import DashBoardNav from '../dashBoardNav';
+
 
 //Components-Libraly
 import ContainerCenter from '../../components/modal/containerCenter';
@@ -12,7 +12,7 @@ import imgVideo from '../../assets/img/openData/video.png';
 
 function OpenData() {
     return(
-        <DashBoardNav>
+        
             <ContainerCenter bgColor="transparent">
                 <h1>Open data service</h1>
                 <CardCQ>
@@ -28,7 +28,7 @@ function OpenData() {
                     </div>
                 </CardCQ>
             </ContainerCenter>
-        </DashBoardNav>
+        
     )
 }
 

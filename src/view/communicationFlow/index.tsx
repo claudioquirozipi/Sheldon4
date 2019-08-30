@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 //Components
-import DashBoardNav from '../dashBoardNav';
+
 import Card from './card';
 
 //Styled-Components
@@ -15,7 +15,7 @@ import {data} from '../../controller/communicationFlow/data';
 
 function CommunicationFlow() {
     return(
-        <DashBoardNav>
+        
             <ContainerCommunicationFlow>
                 {
                     data.map((data, i)=> {
@@ -25,7 +25,7 @@ function CommunicationFlow() {
                     })
                 }
             </ContainerCommunicationFlow>
-        </DashBoardNav>
+        
     )
 }
 

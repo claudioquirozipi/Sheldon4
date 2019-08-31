@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+//Compenents
+import GridContainerD from '../grid/gridContainerD';
 
 
 //Components Library
@@ -11,15 +13,17 @@ import InputSubmit from '../../components/form/inputSubmit';
 
 function RecoverPassword() {
     return(
-        <ContainerCenter bgColor="#F8F8F8">
-            <Paper urlClouse="/"> 
-                <Form>
-                    <h1>Send a URL to you email</h1>
-                    <InputEmail placeholder="Email" error="hay un error"/>
-                    <InputSubmit value="Send" />
-                </Form>
-            </Paper>
-        </ContainerCenter>
+        <GridContainerD>
+            <ContainerCenter bgColor="#F8F8F8">
+                <Paper urlClouse="/"> 
+                    <Form>
+                        <h1>Send a URL to you email</h1>
+                        <InputEmail placeholder="Email" error="hay un error"/>
+                        <InputSubmit value="Send" />
+                    </Form>
+                </Paper>
+            </ContainerCenter>
+        </GridContainerD>
     )
 }
 

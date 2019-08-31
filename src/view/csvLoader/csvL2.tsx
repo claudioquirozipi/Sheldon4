@@ -1,5 +1,8 @@
 import * as React from 'react';
 
+//Compenents
+import GridContainerD from '../grid/gridContainerD';
+
 //Components Library
 import ContainerCenter from '../../components/modal/containerCenter';
 import Button from '../../components/buttons';
@@ -25,18 +28,20 @@ function Img() {
 
 function CsvLoader2() {
     return(
-        <ContainerCenter bgColor="white">
-            <ContainerCsvLoader>
-                <Img />
-                <h1>Valida y carga el CSV</h1>
-                <p>
-                    Hazlo tal cual están las columnas, completando la información que<br/>
-                    dispones en tu CRM, Linkedin, Excel, o cualquier otro formato<br/>
-                    Para adjuntarla aqui y Sheldon pueda entenderla.
-                </p>
-                <Button text="Cargar" bgColor="#3FC180" disable={true}/>
-            </ContainerCsvLoader>
-        </ContainerCenter>
+        <GridContainerD>
+            <ContainerCenter bgColor="white">
+                <ContainerCsvLoader>
+                    <Img />
+                    <h1>Valida y carga el CSV</h1>
+                    <p>
+                        Hazlo tal cual están las columnas, completando la información que<br/>
+                        dispones en tu CRM, Linkedin, Excel, o cualquier otro formato<br/>
+                        Para adjuntarla aqui y Sheldon pueda entenderla.
+                    </p>
+                    <Button text="Cargar" bgColor="#3FC180" disable={true}/>
+                </ContainerCsvLoader>
+            </ContainerCenter>
+        </GridContainerD>
     )
 }
 

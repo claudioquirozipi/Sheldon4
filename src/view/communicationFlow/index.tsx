@@ -3,6 +3,9 @@ import * as React from 'react';
 //Components
 
 import Card from './card';
+import SalesFunnelModal from '../salesFunnel/modal';
+//Components-Library
+import ModalCQ from '../../components/modal/modal';
 
 //Styled-Components
 import {
@@ -14,13 +17,22 @@ import {data} from '../../controller/communicationFlow/data';
 
 
 function CommunicationFlow() {
+    const [modalView, setModalView] = React.useState(false);
     return(
         
             <ContainerCommunicationFlow>
+                <ModalCQ view={modalView}>
+                    <SalesFunnelModal 
+                        modalView={modalView}
+                        setModalView={setModalView}
+                    />
+                </ModalCQ>
                 {
                     data.map((data, i)=> {
                         return(
-                            <Card key={i} data={data}/>
+                            <div onClick={()=>setModalView(!modalView)}>
+                                <Card key={i} data={data} />
+                            </div>
                         )
                     })
                 }

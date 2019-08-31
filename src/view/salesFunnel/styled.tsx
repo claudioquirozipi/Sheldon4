@@ -95,3 +95,54 @@ export const Table = styled.table`
         }
     }
 `;
+
+//**************+ */Container modal *************+
+export const ContainerModal = styled.div`
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    display: grid;
+    grid-template-columns: 267px 1fr;
+    overflow: hidden;
+    position: relative;
+    h1 {
+        color: #70A1FF;
+        font-size: 25px;
+    }
+    form {
+        width: 401px;
+        padding: 0 51px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+`;
+
+export const ContainerButton = styled.div`
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    img {
+        width: 2px;
+        height: 20px;
+    }
+    h1 {margin:0;}
+`;
+export const DobleInput = styled.div`
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 7.8px;
+
+`;
+export const ContainerInput = styled.div`
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        select, textarea {
+            width: 100%;
+        }
+    
+`;

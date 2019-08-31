@@ -1,5 +1,8 @@
 import * as React from 'react';
 
+//Compenents
+import GridContainerD from '../grid/gridContainerD';
+
 //Components Library
 import ContainerCenter from '../../components/modal/containerCenter';
 import Button from '../../components/buttons';
@@ -21,17 +24,19 @@ function Img() {
 
 function CsvLoader3() {
     return(
-        <ContainerCenter bgColor="white">
-           <ContainerCsvLoader>
-                <Img />
-                <h1>Procesando tu clientes</h1>
-                <p>
-                    Aguarda unos minutos mientras Sheldon analiza <br/>
-                    y procesa toda tu base de datos.
-                </p>
-                <Button text="Entendido" bgColor="#3FC180" disable={false}/>
-            </ContainerCsvLoader>
-        </ContainerCenter>
+        <GridContainerD>
+            <ContainerCenter bgColor="white">
+            <ContainerCsvLoader>
+                    <Img />
+                    <h1>Procesando tu clientes</h1>
+                    <p>
+                        Aguarda unos minutos mientras Sheldon analiza <br/>
+                        y procesa toda tu base de datos.
+                    </p>
+                    <Button text="Entendido" bgColor="#3FC180" disable={false}/>
+                </ContainerCsvLoader>
+            </ContainerCenter>
+        </GridContainerD>
     )
 }
 

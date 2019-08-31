@@ -1,5 +1,8 @@
 import * as React from 'react';
 
+//Compenents
+import GridContainerD from '../grid/gridContainerD';
+
 //Components Library
 import ContainerCenter from '../../components/modal/containerCenter';
 import Paper from '../../components/paper';
@@ -9,16 +12,18 @@ import InputSubmit from '../../components/form/inputSubmit';
 
 function NewPassword() {
     return(
-        <ContainerCenter bgColor="#F8F8F8">
-            <Paper urlClouse="/">
-                <Form>
-                    <h1>Create a new<br/>password</h1>
-                    <InputPassword placeholder="Password" error="hay un error"/>
-                    <InputPassword placeholder="Repassword" error="hay un error"/>
-                    <InputSubmit value="Create" />
-                </Form>
-            </Paper>
-        </ContainerCenter>
+        <GridContainerD>
+            <ContainerCenter bgColor="#F8F8F8">
+                <Paper urlClouse="/">
+                    <Form>
+                        <h1>Create a new<br/>password</h1>
+                        <InputPassword placeholder="Password" error="hay un error"/>
+                        <InputPassword placeholder="Repassword" error="hay un error"/>
+                        <InputSubmit value="Create" />
+                    </Form>
+                </Paper>
+            </ContainerCenter>
+        </GridContainerD>
     )
 }
 
